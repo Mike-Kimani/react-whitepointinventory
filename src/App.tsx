@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Purchases from "./pages/Purchases";
 import Payments from "./pages/Payments";
+import Users from "./pages/Users";
 import Farmers from "./pages/Farmers";
 
 const App: React.FC = () => {
@@ -50,6 +51,11 @@ const App: React.FC = () => {
               <div className="Payments">
                   <Routes>
                       <Route path="/payments" element={<Payments APIKey={APIKey}/>}/>
+                  </Routes>
+              </div>
+              <div className="Users">
+                  <Routes>
+                      <Route path="/users" element={<Users />}/>
                   </Routes>
               </div>
               <div className="Payments">
